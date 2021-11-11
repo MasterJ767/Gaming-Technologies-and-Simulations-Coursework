@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3170d4fbc756e5d49a2b8f636931e15b, type: 3}
+  m_Name: MagicRate
+  m_EditorClassIdentifier: 
+  powerupName: Magic Fire Rate Boost
+  variant: 2
+  colour: {r: 0.77254903, g: 0.39189616, b: 0.16470587, a: 1}
+  description: A powerup which increases the fire rate of the player's basic attack.
