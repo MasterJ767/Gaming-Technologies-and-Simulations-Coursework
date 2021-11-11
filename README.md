@@ -23,7 +23,7 @@ See [LICENSE.md](LICENSE.md) for more details
 ---
 The following assets were taken from the Unity Store and used in my project:
 
-  ### SCI-FI_Barrels_40_Sample
+  ### [SCI-FI_Barrels_40_Sample](https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-barrels-40-sample-92986)
   - Barrel_BaseS
   - Barrel_BoxGreyS
   - Barrel_CartMiniS
@@ -33,43 +33,43 @@ The following assets were taken from the Unity Store and used in my project:
   - Barrel_WideS
   - Plate_GreyS
 
-  ### Architecture Textures Pack
+  ### [Architecture Textures Pack](https://assetstore.unity.com/packages/2d/textures-materials/yughues-free-architectural-materials-13234)
   - Ceiling diffuse material
 
-  ### Breakable Windows
+  ### [Breakable Windows](https://assetstore.unity.com/packages/tools/particles-effects/breakable-windows-110383)
   - Window material
 
-  ### Concrete Textures Pack
+  ### [Concrete Textures Pack](https://assetstore.unity.com/packages/2d/textures-materials/concrete/yughues-free-concrete-materials-12951)
   - Pattern 04 diffuse material
 
-  ### Ground Texture Pack
+  ### [Ground Texture Pack](https://assetstore.unity.com/packages/2d/textures-materials/floors/yughues-free-ground-materials-13001)
   - Grass 05 diffuse material
 
-  ### Hovel Studio
+  ### [Hovel Studio](https://assetstore.unity.com/packages/3d/props/weapons/magic-swords-97694)
   - Magic Sword model
 
-  ### JMO Assets - Cartoon Fx
+  ### [JMO Assets - Cartoon Fx](https://assetstore.unity.com/packages/vfx/particles/cartoon-fx-free-109565)
   - CFX2_EnemyDeathSkull
   - Blood
   - CFX3_MagicAura_B_Runic
   
-  ### JMO Assets - War FX
+  ### [JMO Assets - War FX](https://assetstore.unity.com/packages/vfx/particles/war-fx-5669)
   - WFX_MF 4P RIFLE2
   - WFX_BImpact_Wood
 
-  ### KY_effects
+  ### [KY_effects](https://assetstore.unity.com/packages/vfx/particles/spells/ky-magic-effects-free-21927)
   - ErekiBall
   - SkillAttack2
   - Spark
   
-  ### Sci Fi Gun Light
+  ### [Sci Fi Gun Light](https://assetstore.unity.com/packages/3d/props/guns/sci-fi-gun-light-87916)
   - GunHeavy model
 
-  ### Wolf3D
+  ### [Wolf3D](https://assetstore.unity.com/packages/3d/characters/human-characters-free-sample-pack-181554)
   - Male_02_V02
   - Female_01_V01
 
-  ### YughuesFreeMetalMaterials
+  ### [YughuesFreeMetalMaterials](https://assetstore.unity.com/packages/2d/textures-materials/metals/yughues-free-metal-materials-12949)
   - M_YFMM_43 (material)
   - T_18_Emissive (2D Texture)
 
