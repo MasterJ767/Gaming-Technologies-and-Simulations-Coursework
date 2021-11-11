@@ -10,6 +10,8 @@ How to Use
 
 To run the game open the scene called "Empty" and press play in the editor. Currently - for reasons which I am yet to deduce - running a build of them game causes the game to become permanently stuck in the "Empty" scene without progressing forward to the actual game.
 
+Currently only levels 1 and 2 are implemented. While level 3 does unlock afetr the completion of level 2, attempting to enter the level will cause the game to crash.
+
 For information on controls either press 'I' once inside the game or see [HOWTOPLAY.md](HOWTOPLAY.md)
 
 Built With
