@@ -59,6 +59,7 @@ The following assets were taken from the Unity Store and used in my project:
   - CFX2_EnemyDeathSkull
   - Blood
   - CFX3_MagicAura_B_Runic
+  - CFX_Riplle_Add Soft
   
   ### [JMO Assets - War FX](https://assetstore.unity.com/packages/vfx/particles/war-fx-5669)
   - WFX_MF 4P RIFLE2
