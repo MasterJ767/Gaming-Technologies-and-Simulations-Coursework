@@ -1,5 +1,5 @@
 Gaming-Technologies-and-Simulations-Coursework
-----------------------------------------------
+==============================================
 
 This work-in-progress game is a unity project, created for my coursework submission for the Gaming Technologies and Simulations module.
 
