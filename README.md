@@ -1,26 +1,26 @@
 #Gaming-Technologies-and-Simulations-Coursework
----
+
 This work-in-progress game is a unity project, created for my coursework submission for the Gaming Technologies and Simulations module.
 
 My game is 3D game which draws influence from FPSs and Platformers. The Overworld element of my game is an interactive level selection screen which is 2D.
 
 ##How to Use
----
+
 To run the game open the scene called "Empty" and press play in the editor. Currently - for reasons which I am yet to deduce - running a build of them game causes the game to become permanently stuck in the "Empty" scene without progressing forward to the actual game.
 
 For information on controls either press 'I' once inside the game or see [HOWTOPLAY.md](HOWTOPLAY.md)
 
 ##Built With:
----
+
 Unity 2021.1.24f1
 Rider 2021.2
 
 ##License:
----
+
 See [LICENSE.md](LICENSE.md) for more details
 
 ##Acknowledgements:
----
+
 The following assets were taken from the Unity Store and used in my project:
 
   ### [SCI-FI_Barrels_40_Sample](https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-barrels-40-sample-92986)
