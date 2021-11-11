@@ -5,6 +5,8 @@ been captured by scientists for experimentation and your task in this game is to
 putting obstacles and soldiers in your way. Along the path you may find syringes with experiemntal concoctions inside which may inhance your abilities, increasing your
 chance of survival. Will you escape or will they kill you first?
 
+Pressing 'I' in game in the Overworld or in level, then accessing the 'How to Play' tab there will broadly provide the same information, though the font used here may be easier to read.
+
 Overworld
 ---------
 This area is the first area you encounter once you have pressed play on the main menu. It is the level selection area, providing a large scale map of the entire facility
