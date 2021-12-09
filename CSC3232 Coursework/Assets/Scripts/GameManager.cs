@@ -9,7 +9,9 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class GameManager : MonoBehaviour
 {
-    public UnityEngine.Object mainMenuScene; 
+    public static GameManager instance;
+    
+    public UnityEngine.Object mainMenuScene;  
     
     public int healthMultiplier = 0;
     public int magicRangeMultiplier = 0;
@@ -39,10 +41,14 @@ public class GameManager : MonoBehaviour
     private string previousScene;
     
     private void Awake() {
-        GameObject instance = GameObject.Find("GameManager");
-        if (instance != gameObject && instance != null)
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
         {
             DestroyImmediate(gameObject);
+            return;
         }
 
         DontDestroyOnLoad(gameObject);
