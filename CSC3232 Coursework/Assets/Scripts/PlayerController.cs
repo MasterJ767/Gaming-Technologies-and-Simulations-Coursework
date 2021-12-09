@@ -41,6 +41,8 @@ public class PlayerController : MonoBehaviour
     public float speed = 0;
     [NonSerialized]
     public Vector3 velocity;
+    [NonSerialized] 
+    public Vector3 slipVelocity;
     [NonSerialized]
     public bool isGrounded = false;
     [NonSerialized]
@@ -306,11 +308,6 @@ public class PlayerController : MonoBehaviour
                 TakeDamage(fallDamage);
             }
         }
-
-        if (velocity.x > 0)
-        {
-            Debug.Log(drawVine);
-        }
         
         float resistance = speed / 200f;
 
@@ -346,11 +343,15 @@ public class PlayerController : MonoBehaviour
         if (onIce)
         {
             Vector3 slipForce = new Vector3(move.x, 0, move.z);
-            velocity += slipForce * 0.015f;
+            slipVelocity += slipForce * 0.015f;
+        }
+        else
+        {
+            slipVelocity = Vector3.zero;
         }
         
         // Move player after taking into account player inputs and resistive forces
-        controller.Move((velocity + move) * Time.deltaTime);
+        controller.Move((velocity + slipVelocity + move) * Time.deltaTime);
     }
     
     /// <summary>
