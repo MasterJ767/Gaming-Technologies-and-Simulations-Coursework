@@ -30,6 +30,8 @@ Acknowledgements
 
 The following assets were taken from the Unity Store and used in my project:
 
+Graphical Assets:
+
   ### [SCI-FI_Barrels_40_Sample](https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-barrels-40-sample-92986)
   - Barrel_BaseS
   - Barrel_BoxGreyS
@@ -80,6 +82,17 @@ The following assets were taken from the Unity Store and used in my project:
   ### [YughuesFreeMetalMaterials](https://assetstore.unity.com/packages/2d/textures-materials/metals/yughues-free-metal-materials-12949)
   - M_YFMM_43 (material)
   - T_18_Emissive (2D Texture)
+
+Musical Assets:
+
+  ### [Free Sound Effects Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-sound-effects-pack-155776#content)
+  - Magic Spell_Simple Swoosh_6
+
+  ### [Dark Future Music](https://assetstore.unity.com/packages/audio/music/electronic/dark-future-music-3777)
+  - Future World_Darkness_Loop
+  - Future World_Loading_Loop
+  - Future World_Dark_Loop_02
+  - Future World_Dark_Loop_03
 
 The above assets can all be found in Assets/Plugins. 
 
