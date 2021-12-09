@@ -30,9 +30,9 @@ Acknowledgements
 
 The following assets were taken from the Unity Store and used in my project:
 
-__Graphical Assets__:
+###__Graphical Assets__:
 
-  ### [SCI-FI_Barrels_40_Sample](https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-barrels-40-sample-92986)
+  #### [SCI-FI_Barrels_40_Sample](https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-barrels-40-sample-92986)
   - Barrel_BaseS
   - Barrel_BoxGreyS
   - Barrel_CartMiniS
@@ -42,53 +42,53 @@ __Graphical Assets__:
   - Barrel_WideS
   - Plate_GreyS
 
-  ### [Architecture Textures Pack](https://assetstore.unity.com/packages/2d/textures-materials/yughues-free-architectural-materials-13234)
+  #### [Architecture Textures Pack](https://assetstore.unity.com/packages/2d/textures-materials/yughues-free-architectural-materials-13234)
   - Ceiling diffuse material
 
-  ### [Breakable Windows](https://assetstore.unity.com/packages/tools/particles-effects/breakable-windows-110383)
+  #### [Breakable Windows](https://assetstore.unity.com/packages/tools/particles-effects/breakable-windows-110383)
   - Window material
 
-  ### [Concrete Textures Pack](https://assetstore.unity.com/packages/2d/textures-materials/concrete/yughues-free-concrete-materials-12951)
+  #### [Concrete Textures Pack](https://assetstore.unity.com/packages/2d/textures-materials/concrete/yughues-free-concrete-materials-12951)
   - Pattern 04 diffuse material
 
-  ### [Ground Texture Pack](https://assetstore.unity.com/packages/2d/textures-materials/floors/yughues-free-ground-materials-13001)
+  #### [Ground Texture Pack](https://assetstore.unity.com/packages/2d/textures-materials/floors/yughues-free-ground-materials-13001)
   - Grass 05 diffuse material
 
-  ### [Hovel Studio](https://assetstore.unity.com/packages/3d/props/weapons/magic-swords-97694)
+  #### [Hovel Studio](https://assetstore.unity.com/packages/3d/props/weapons/magic-swords-97694)
   - Magic Sword model
 
-  ### [JMO Assets - Cartoon Fx](https://assetstore.unity.com/packages/vfx/particles/cartoon-fx-free-109565)
+  #### [JMO Assets - Cartoon Fx](https://assetstore.unity.com/packages/vfx/particles/cartoon-fx-free-109565)
   - CFX2_EnemyDeathSkull
   - Blood
   - CFX3_MagicAura_B_Runic
   - CFX_Riplle_Add Soft
   
-  ### [JMO Assets - War FX](https://assetstore.unity.com/packages/vfx/particles/war-fx-5669)
+  #### [JMO Assets - War FX](https://assetstore.unity.com/packages/vfx/particles/war-fx-5669)
   - WFX_MF 4P RIFLE2
   - WFX_BImpact_Wood
 
-  ### [KY_effects](https://assetstore.unity.com/packages/vfx/particles/spells/ky-magic-effects-free-21927)
+  #### [KY_effects](https://assetstore.unity.com/packages/vfx/particles/spells/ky-magic-effects-free-21927)
   - ErekiBall
   - SkillAttack2
   - Spark
   
-  ### [Sci Fi Gun Light](https://assetstore.unity.com/packages/3d/props/guns/sci-fi-gun-light-87916)
+  #### [Sci Fi Gun Light](https://assetstore.unity.com/packages/3d/props/guns/sci-fi-gun-light-87916)
   - GunHeavy model
 
-  ### [Wolf3D](https://assetstore.unity.com/packages/3d/characters/human-characters-free-sample-pack-181554)
+  #### [Wolf3D](https://assetstore.unity.com/packages/3d/characters/human-characters-free-sample-pack-181554)
   - Male_02_V02
   - Female_01_V01
 
-  ### [YughuesFreeMetalMaterials](https://assetstore.unity.com/packages/2d/textures-materials/metals/yughues-free-metal-materials-12949)
+  #### [YughuesFreeMetalMaterials](https://assetstore.unity.com/packages/2d/textures-materials/metals/yughues-free-metal-materials-12949)
   - M_YFMM_43 (material)
   - T_18_Emissive (2D Texture)
 
-__Musical Assets__:
+###__Musical Assets__:
 
-  ### [Free Sound Effects Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-sound-effects-pack-155776#content)
+  #### [Free Sound Effects Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-sound-effects-pack-155776#content)
   - Magic Spell_Simple Swoosh_6
 
-  ### [Dark Future Music](https://assetstore.unity.com/packages/audio/music/electronic/dark-future-music-3777)
+  #### [Dark Future Music](https://assetstore.unity.com/packages/audio/music/electronic/dark-future-music-3777)
   - Future World_Darkness_Loop
   - Future World_Loading_Loop
   - Future World_Dark_Loop_02
