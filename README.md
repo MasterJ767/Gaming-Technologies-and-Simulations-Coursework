@@ -30,7 +30,7 @@ Acknowledgements
 
 The following assets were taken from the Unity Store and used in my project:
 
-###Graphical Assets:
+### Graphical Assets:
 
   #### [SCI-FI_Barrels_40_Sample](https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-barrels-40-sample-92986)
   - Barrel_BaseS
@@ -83,7 +83,7 @@ The following assets were taken from the Unity Store and used in my project:
   - M_YFMM_43 (material)
   - T_18_Emissive (2D Texture)
 
-###Musical Assets:
+### Musical Assets:
 
   #### [Free Sound Effects Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-sound-effects-pack-155776#content)
   - Magic Spell_Simple Swoosh_6
