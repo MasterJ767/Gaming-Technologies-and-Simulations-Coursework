@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -29,12 +30,21 @@ public class AudioManager : MonoBehaviour
             sound.source.clip = sound.clip;
             sound.source.volume = sound.volume;
             sound.source.pitch = sound.pitch;
+            sound.source.loop = true;
+            if (sound.blend3D)
+            {
+                sound.source.spatialBlend = 1;
+            }
+            else
+            {
+                sound.source.spatialBlend = 0;
+            }
         }
     }
 
-    private void Start()
+    public void Start()
     {
-        Play("main");
+        Play(SceneManager.GetActiveScene().name);
     }
 
     public void Play(string audioName)
