@@ -247,6 +247,7 @@ public class EnemyController : MonoBehaviour
     private void Shoot()
     {
         muzzleFlash.Play();
+        gun.GetComponent<AudioSource>().Play();
         StartCoroutine(MuzzleFlicker());
         Vector3 shotInstantiationPoint = head.transform.position;
         Vector3 direction = (target.position - shotInstantiationPoint).normalized;

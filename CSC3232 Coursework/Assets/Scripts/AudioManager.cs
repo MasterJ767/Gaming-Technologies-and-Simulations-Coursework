@@ -30,7 +30,7 @@ public class AudioManager : MonoBehaviour
             sound.source.clip = sound.clip;
             sound.source.volume = sound.volume;
             sound.source.pitch = sound.pitch;
-            sound.source.loop = true;
+            /*sound.source.loop = true;
             if (sound.blend3D)
             {
                 sound.source.spatialBlend = 1;
@@ -38,18 +38,19 @@ public class AudioManager : MonoBehaviour
             else
             {
                 sound.source.spatialBlend = 0;
-            }
+            }*/
         }
-    }
-
-    public void Start()
-    {
-        Play(SceneManager.GetActiveScene().name);
     }
 
     public void Play(string audioName)
     {
-        Audio sound = Array.Find(sounds, sound => sound.name == name);
+        Audio sound = Array.Find(sounds, sound => sound.name == audioName);
         sound?.source.Play();
+    }
+
+    public void Stop(string audioName)
+    {
+        Audio sound = Array.Find(sounds, sound => sound.name == audioName);
+        sound?.source.Stop();
     }
 }

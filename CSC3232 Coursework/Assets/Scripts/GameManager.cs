@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -39,6 +40,9 @@ public class GameManager : MonoBehaviour
     public bool bonus4Complete = false; 
     private bool runCompleteUpdate = false;
     private string previousScene;
+
+    private AudioManager am;
+    private bool updateBackgroundMusic = false;
     
     private void Awake() {
         if (instance == null)
@@ -52,6 +56,8 @@ public class GameManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);
+        
+        am = GameObject.Find("AudioManager").GetComponent<AudioManager>();
     }
 
     private void Update()
@@ -60,6 +66,15 @@ public class GameManager : MonoBehaviour
         {
             SetParameters(State.Menu, SceneManager.GetActiveScene().name, false, false);
             SceneManager.LoadSceneAsync(mainMenuScene.name, LoadSceneMode.Single);
+        }
+
+        if (updateBackgroundMusic && (previousScene != SceneManager.GetActiveScene().name))
+        {
+            Debug.Log(previousScene);
+            Debug.Log(SceneManager.GetActiveScene().name);
+            am.Stop(previousScene);
+            am.Play(SceneManager.GetActiveScene().name);
+            updateBackgroundMusic = false;
         }
 
         if (runCompleteUpdate && currentState == State.Overworld && (previousScene != SceneManager.GetActiveScene().name))
@@ -146,6 +161,7 @@ public class GameManager : MonoBehaviour
         }
         
         previousScene = currentSceneName;
+        updateBackgroundMusic = true;
     }
 
     public void SetParameters(State newState, string sceneCompletedName, bool levelComplete, bool exitingLevel)
@@ -179,6 +195,7 @@ public class GameManager : MonoBehaviour
         }
         
         previousScene = sceneCompletedName;
+        updateBackgroundMusic = true;
     }
 }
 
