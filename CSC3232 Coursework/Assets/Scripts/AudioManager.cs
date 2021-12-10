@@ -27,10 +27,11 @@ public class AudioManager : MonoBehaviour
         foreach (Audio sound in sounds)
         {
             sound.source = gameObject.AddComponent<AudioSource>();
+            sound.source.playOnAwake = false;
             sound.source.clip = sound.clip;
             sound.source.volume = sound.volume;
             sound.source.pitch = sound.pitch;
-            /*sound.source.loop = true;
+            sound.source.loop = true;
             if (sound.blend3D)
             {
                 sound.source.spatialBlend = 1;
@@ -38,19 +39,17 @@ public class AudioManager : MonoBehaviour
             else
             {
                 sound.source.spatialBlend = 0;
-            }*/
+            }
         }
     }
 
     public void Play(string audioName)
     {
-        Audio sound = Array.Find(sounds, sound => sound.name == audioName);
-        sound?.source.Play();
+        Array.Find(sounds, sound => sound.name == audioName)?.source.Play();
     }
 
     public void Stop(string audioName)
     {
-        Audio sound = Array.Find(sounds, sound => sound.name == audioName);
-        sound?.source.Stop();
+        Array.Find(sounds, sound => sound.name == audioName)?.source.Stop();
     }
 }

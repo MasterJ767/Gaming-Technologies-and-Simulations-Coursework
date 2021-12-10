@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 
 /// <summary>
@@ -16,6 +17,8 @@ public class MovingPlatform : MonoBehaviour
     public float speed;
     public float delayDuration;
 
+    private List<NavMeshAgent> agents;
+
     private float arrivalTime;
 
     private void Start()
@@ -24,6 +27,8 @@ public class MovingPlatform : MonoBehaviour
         {
             nextPoint = points[currentIndex];
         }
+
+        agents = new List<NavMeshAgent>();
     }
 
     private void FixedUpdate()
@@ -40,17 +45,27 @@ public class MovingPlatform : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == 6 || other.gameObject.layer == 8)
+        if (other.gameObject.layer == 6)
         {
             other.gameObject.transform.SetParent(transform);
+        }
+        else if (other.gameObject.layer == 8 && other.gameObject.name != "Head")
+        {
+            other.gameObject.transform.SetParent(transform);
+            agents.Add(other.gameObject.GetComponent<NavMeshAgent>());
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.layer == 6 || other.gameObject.layer == 8)
+        if (other.gameObject.layer == 6)
         {
             other.gameObject.transform.SetParent(null);
+        }
+        else if (other.gameObject.layer == 8 && other.gameObject.name != "Head")
+        {
+            other.gameObject.transform.SetParent(null);
+            agents.Remove(other.gameObject.GetComponent<NavMeshAgent>());
         }
     }
 
@@ -60,6 +75,10 @@ public class MovingPlatform : MonoBehaviour
     private void Move()
     {
         Vector3 direction = nextPoint - transform.position;
+        foreach (NavMeshAgent agent in agents)
+        {
+            agent.Warp(agent.transform.position + (direction.normalized * speed * Time.fixedDeltaTime));
+        }
         transform.position += direction.normalized * speed * Time.fixedDeltaTime;
         if (direction.magnitude < speed * Time.fixedDeltaTime)
         {

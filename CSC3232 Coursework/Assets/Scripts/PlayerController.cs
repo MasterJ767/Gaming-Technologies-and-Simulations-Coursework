@@ -443,6 +443,7 @@ public class PlayerController : MonoBehaviour
             // Play the sword swipe animation in sword mode
             else
             {
+                swordAttack.GetComponent<AudioSource>().Play();
                 swordAnimator.SetTrigger("Attack");
                 StartCoroutine(SwordCooldown());
             }
