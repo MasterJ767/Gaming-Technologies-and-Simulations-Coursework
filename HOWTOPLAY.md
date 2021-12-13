@@ -43,9 +43,9 @@ pulls them towards that surface. The croshair in the middle of the screen denote
 When the crosshair is two green arrows the player may press 'Q' to execute the ability. The red cross will appear if the player is looking at an invalid surface (e.g:
 a psychic box), the nearest solid object the player is looking at is too far away or if the abiltiy is on cooldown.
 
-The second and final of the player's special psychic abilities is a levitate ability. When 'E' is pressed while looking at a vald enemy, that enemy is hurled straight upwards into
+The second and final of the player's special psychic abilities is a levitate ability. When 'E' is pressed while looking at a valid enemy, that enemy is hurled straight upwards into
 the air. When they land on the ground they take fall damage. If a Pink-Purple circular aura appears around an enemy it means that they are eligible to be launched into the air by 
-this ability. The aura doesn't show up if the enemy is out of range or if the ability is on cooldown.
+this ability. The aura doesn't show up if the enemy is out of range or if the ability is on cooldown.Human enemies are considered valid for this ability, while robot enemies are not.
 
 ### The Environment
 Levels are filled with pink boxes with line patterns throughout them, these are special psychic boxes which can be only destoryed by the player's sword. The boxes are usually placed
@@ -62,7 +62,7 @@ they are not careful.
 Enemies have a vision radius within which they can see the player. Once the player enters this radius, they will move towards the player. If they are within stopping distance
 of the player they turn to face the player and start shooting, with the aim of killing the player.
 
-Enemies have two hitboxes, one for their head and one for the rest of their body. If an attack of any kind from the player hits the enemies head it deals an additional 50%
+Enemies have two hitboxes, one for their head and one for the rest of their body. If an attack of any kind from the player hits the enemy's head it deals an additional 50%
 damage and a small 'boom' particle effect is emitted.
 
 ### Controls
