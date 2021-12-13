@@ -201,6 +201,18 @@ public class EnemyBotController : MonoBehaviour
     /// </summary>
     private void MakeDecision()
     {
+        foreach (GameObject boid in flock.droids)
+        {
+            if (boid != gameObject)
+            {
+                if (Vector3.Distance(boid.transform.position, transform.position) < flock.separationDistance)
+                {
+                    Vector3 direction = boid.transform.position - transform.position;
+                    agent.Warp(transform.position - (direction.normalized * agent.speed * Time.deltaTime));
+                }
+            }
+        }
+        
         // If not on NavMesh enemy cannot pathfind
         if (agent.enabled)
         {

@@ -6,4 +6,5 @@ using UnityEngine;
 public class Flock : MonoBehaviour
 {
     public GameObject[] droids;
+    public float separationDistance;
 }
