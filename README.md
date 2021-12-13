@@ -8,7 +8,7 @@ My game is 3D game which draws influence from FPSs and Platformers. The Overworl
 How to Use
 -------------
 
-To run the game open the scene called "Main Menu" and press play in the editor. If launched form another scene, the game should automatically transfer to the main menu however this hasn't be tested withg all scenes.
+To run the game open the scene called "Main Menu" and press play in the editor. If launched form another scene, the game should automatically transfer to the main menu however this hasn't be tested withg all scenes. Alternatively there is a build of the game found in the /Build folder, though the UI doesn't always scale correctly when viewing the game through this method.
 
 The game contains 5 levels. On completion of the fifth level there is nothing else to complete in the game.
 
