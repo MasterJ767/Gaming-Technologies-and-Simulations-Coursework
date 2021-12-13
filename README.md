@@ -17,8 +17,8 @@ For information on controls either press 'I' once inside the game or see [HOWTOP
 Built With
 ----------
 
-Unity 2021.1.24f1
-Rider 2021.2
+- Unity 2021.1.24f1
+- Rider 2021.2
 
 License
 -------
@@ -62,6 +62,8 @@ The following assets were taken from the Unity Store and used in my project:
   - Blood
   - CFX3_MagicAura_B_Runic
   - CFX_Riplle_Add Soft
+  - CFX_ElectricityBall
+  - CFX3_Hit_Electric_A_Ground
   
   #### [JMO Assets - War FX](https://assetstore.unity.com/packages/vfx/particles/war-fx-5669)
   - WFX_MF 4P RIFLE2
