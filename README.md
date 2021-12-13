@@ -8,9 +8,9 @@ My game is 3D game which draws influence from FPSs and Platformers. The Overworl
 How to Use
 -------------
 
-To run the game open the scene called "Empty" and press play in the editor. Currently - for reasons which I am yet to deduce - running a build of them game causes the game to become permanently stuck in the "Empty" scene without progressing forward to the actual game.
+To run the game open the scene called "Main Menu" and press play in the editor. If launched form another scene, the game should automatically transfer to the main menu however this hasn't be tested withg all scenes.
 
-Currently only levels 1 and 2 are implemented. While level 3 does unlock afetr the completion of level 2, attempting to enter the level will cause the game to crash.
+The game contains 5 levels. On completion of the fifth level there is nothing else to complete in the game.
 
 For information on controls either press 'I' once inside the game or see [HOWTOPLAY.md](HOWTOPLAY.md)
 
@@ -87,6 +87,10 @@ The following assets were taken from the Unity Store and used in my project:
 
   #### [Free Sound Effects Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-sound-effects-pack-155776#content)
   - Magic Spell_Simple Swoosh_6
+  - Indiana Jones Punch
+  - Bullet Impact 14
+  - Hand Gun 1
+  - Ghost Manifestation 2
 
   #### [Dark Future Music](https://assetstore.unity.com/packages/audio/music/electronic/dark-future-music-3777)
   - Future World_Darkness_Loop
