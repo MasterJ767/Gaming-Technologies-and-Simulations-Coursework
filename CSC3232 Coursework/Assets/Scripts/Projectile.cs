@@ -47,6 +47,10 @@ public class Projectile : MonoBehaviour
         {
             StartCoroutine(DecayEnemy(other, true));
         }
+        else if (other.CompareTag("Bot"))
+        {
+            StartCoroutine(DecayEnemyBot(other));
+        }
         else if (other.CompareTag("Enemy"))
         {
             StartCoroutine(DecayEnemy(other, false));
@@ -109,6 +113,28 @@ public class Projectile : MonoBehaviour
             enemy = other.gameObject.GetComponent<EnemyController>();
         }
 
+        enemy.TakeDamage(pc.GetMagicDamage());
+        
+        yield return new WaitForSeconds(2.5f);
+        
+        Destroy(gameObject);
+    }
+    
+    /// <summary>
+    /// Destory porjectile on collision with enemy, deal calculated damage, taking into account if it hit the enemy's head or not
+    /// </summary>
+    /// <param name="other">Enemy's collider</param>
+    /// <param name="head">True if the collider is the enemy's head, false otherwise</param>
+    /// <returns></returns>
+    IEnumerator DecayEnemyBot(Collider other)
+    {
+        rb.velocity = Vector3.zero;
+        graphic.SetActive(false);
+
+        Instantiate(impactEffect, transform.position, transform.rotation, transform);
+
+        EnemyBotController enemy = other.gameObject.GetComponent<EnemyBotController>();
+        
         enemy.TakeDamage(pc.GetMagicDamage());
         
         yield return new WaitForSeconds(2.5f);

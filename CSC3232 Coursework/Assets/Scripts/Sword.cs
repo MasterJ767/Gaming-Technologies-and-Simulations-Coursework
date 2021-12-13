@@ -33,6 +33,11 @@ public class Sword : MonoBehaviour
                 StartCoroutine(HeadShot(other));
                 ec.TakeDamage(pc.GetSwordDamage() * 1.5f);
             }
+            else if (other.CompareTag("Bot"))
+            {
+                EnemyBotController ec = other.gameObject.GetComponent<EnemyBotController>();
+                ec.TakeDamage(pc.GetSwordDamage());
+            }
             else if (other.CompareTag("Enemy"))
             {
                 EnemyController ec = other.gameObject.GetComponent<EnemyController>();

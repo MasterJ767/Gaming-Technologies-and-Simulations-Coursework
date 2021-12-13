@@ -2034,11 +2034,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5293764564304661980, guid: b553fa38752f4eb4c96eb804ec0276f6, type: 3}
       propertyPath: level1Complete
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5293764564304661980, guid: b553fa38752f4eb4c96eb804ec0276f6, type: 3}
       propertyPath: level2Complete
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5293764564304661981, guid: b553fa38752f4eb4c96eb804ec0276f6, type: 3}
       propertyPath: m_RootOrder

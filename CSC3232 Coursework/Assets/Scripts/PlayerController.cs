@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -514,17 +516,22 @@ public class PlayerController : MonoBehaviour
                 */
                 if (hit.collider.gameObject.layer == 8)
                 {
-                    EnemyController ec;
-                    if (hit.collider.CompareTag("Head"))
+                    if (!hit.collider.CompareTag("Bot"))
                     {
-                        ec = hit.collider.gameObject.transform.parent.parent.parent.parent.parent.parent.parent.parent.gameObject.GetComponent<EnemyController>();
+                        EnemyController ec;
+                        if (hit.collider.CompareTag("Head"))
+                        {
+                            ec = hit.collider.gameObject.transform.parent.parent.parent.parent.parent.parent.parent
+                                .parent.gameObject.GetComponent<EnemyController>();
+                        }
+                        else
+                        {
+                            ec = hit.collider.gameObject.GetComponent<EnemyController>();
+                        }
+
+                        ec.updraftNextFrame = true;
+                        StartCoroutine(LevitateCooldown());
                     }
-                    else
-                    {
-                        ec = hit.collider.gameObject.GetComponent<EnemyController>();
-                    }
-                    ec.updraftNextFrame = true;
-                    StartCoroutine(LevitateCooldown());
                 }
             }
         }
@@ -632,20 +639,23 @@ public class PlayerController : MonoBehaviour
             {
                 if (hit.collider.gameObject.layer == 8)
                 {
-                    EnemyController ec;
-                    if (hit.collider.CompareTag("Head"))
+                    if (!hit.collider.CompareTag("Bot"))
                     {
-                        ec = hit.collider.gameObject.transform.parent.parent.parent.parent.parent.parent.parent.parent
-                            .gameObject.GetComponent<EnemyController>();
-                    }
-                    else
-                    {
-                        ec = hit.collider.gameObject.GetComponent<EnemyController>();
-                    }
+                        EnemyController ec;
+                        if (hit.collider.CompareTag("Head"))
+                        {
+                            ec = hit.collider.gameObject.transform.parent.parent.parent.parent.parent.parent.parent.parent
+                                .gameObject.GetComponent<EnemyController>();
+                        }
+                        else
+                        {
+                            ec = hit.collider.gameObject.GetComponent<EnemyController>();
+                        }
 
-                    ec.SetHighlight(true);
-                    levitated.Add(ec);
-                    allowLevitate = true;
+                        ec.SetHighlight(true);
+                        levitated.Add(ec);
+                        allowLevitate = true;
+                    }
                 }
                 else
                 {
